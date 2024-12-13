@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lawsuit</title>
+    <title>It wasn't real</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -15,10 +19,56 @@
             background-color: #f4f4f9;
             color: #333;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            z-index: 10;
+            margin-bottom: 20px;
+        }
+
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 20rem;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #808080;
+            opacity: 0.2;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .endorsement {
+            display: flex;
+            align-items: center;
+            font-family: "Alex Brush";
+            font-size: 10rem;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .endorsement img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .endorsement span {
+            font-size: 1.2rem;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>The lawsuit wasn't real guys, trust me.</h1>
+    <div class="background-text">GAINS</div>
+    <h1>The lawsuit wasn't real guys trust me</h1>
+    <div class="endorsement">
+        <img src="sponsor.png" alt="Circular Image">
+        <span>"I support this message" - David</span>
+    </div>
 </body>
 </html>
