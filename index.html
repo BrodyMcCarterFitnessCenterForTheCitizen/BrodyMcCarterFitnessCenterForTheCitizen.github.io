@@ -1,92 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It wasn't real</title>
+    <title>Brody McCarter Fitness Center for the Citizen</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+            line-height: 1.6;
         }
-
-        h1 {
-            z-index: 10;
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .hero {
+            background: url('fitness-center-hero.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h3 {
+            margin-bottom: 10px;
+        }
+        .content p {
             margin-bottom: 20px;
         }
-
-        .background-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-            font-size: 20rem;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #808080;
-            opacity: 0.2;
-            white-space: nowrap;
-            pointer-events: none;
-        }
-
-        .endorsement {
+        .services {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service {
+            background: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .gymImage {
+            margin: 0;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            font-family: "Alex Brush";
-            font-size: 10rem;
-            gap: 15px;
-            z-index: 10;
+            background-color: #f0f0f0;
+            width: 80%;
+            padding-left: 10%;
         }
-
-        .endorsement img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .endorsement span {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .signup-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: bold;
+        footer {
+            background: #333;
             color: #fff;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .signup-button:hover {
-            background-color: #0056b3;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="background-text">GAINS</div>
-    <h1>The lawsuit wasn't real guys trust me</h1>
-    <div class="endorsement">
-        <img src="sponsor.png" alt="Circular Image">
-        <span>"I support this message" - David</span>
-    </div>
-    <a href="#" class="signup-button">Sign up for classes here!</a>
+    <header>
+        <h1>Welcome to Brody McCarter Fitness Center for the Citizen</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <img class="gymImage" src="gym.png">
+    <section class="content" id="about">
+        <h3>About Us</h3>
+        <p>Welcome to Brody McCarter Fitness Center for the Citizen, where we help Jermy and Jermy only</p>
+    </section>
+    <section class="content" id="services">
+        <h3>Our Services</h3>
+        <div class="services">
+            <div class="service">
+                <h4>Community</h4>
+                <p>food events every whenever we decide on it</p>
+            </div>
+            <div class="service">
+                <h4>Group Classes</h4>
+                <p>Fitness, fitness, and more fitness</p>
+            </div>
+            <div class="service">
+                <h4>Nutrition Counseling</h4>
+                <p>Pescaterian. Did you not watch the slideshow</p>
+            </div>
+        </div>
+    </section>
+    <section class="content" id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: email@we don't have an email please don't email us.com</p>
+        <p>Phone: 911</p>
+        <p>Location: 1600 Pennsylvania Avenue, Washington DC</p>
+    </section>
+    <footer>
+        <p><a href="lawsuit.html">Lawsuit? I hardly know her</a></p>
+    </footer>
 </body>
 </html>
